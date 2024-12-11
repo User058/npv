@@ -203,7 +203,7 @@ print_install "Membuat direktori xray"
 
 # Change Environment System
 function first_setup(){
-    timedatectl set-timezone Africa/Kenya
+    timedatectl set-timezone UTC +3
     echo iptables-persistent iptables-persistent/autosave_v4 boolean true | debconf-set-selections
     echo iptables-persistent iptables-persistent/autosave_v6 boolean true | debconf-set-selections
     print_success "Directory Xray"
